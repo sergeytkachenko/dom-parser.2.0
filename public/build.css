@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic);html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+  html > *, html [data-reactroot], body > *, body [data-reactroot] {
+    height: 100%; }
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #fff; }
+
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100%; }
+  .app .left-sidebar {
+    order: 1;
+    flex-grow: 15; }
+  .app .right-sidebar {
+    order: 3;
+    flex-grow: 15; }
+  .app .main-wrap {
+    order: 2;
+    flex-grow: 70;
+    display: flex;
+    flex-direction: column; }
+    .app .main-wrap * {
+      display: flex;
+      flex: 1;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      flex-direction: column; }
+    .app .main-wrap iframe {
+      border: 0;
+      outline: 0; }
+    .app .main-wrap .enter-url {
+      display: block;
+      flex: 0; }
+      .app .main-wrap .enter-url > div {
+        display: block !important; }
+      .app .main-wrap .enter-url div {
+        display: block; }
+
+/*# sourceMappingURL=build.css.map*/
